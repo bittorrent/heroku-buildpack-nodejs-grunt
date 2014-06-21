@@ -155,7 +155,7 @@ echo "export PATH=\"\$HOME/vendor/node/bin:\$HOME/bin:\$HOME/node_modules/.bin:\
     $build_dir/node_modules/.bin/grunt heroku:$NODE_ENV
 
     status "Pruning dev dependencies"
-    npm prune --production 2>&1 | indent
+    npm prune 2>&1 | indent
 
   else
     echo "-----> No Gruntfile (grunt.js, Gruntfile.js, Gruntfile.coffee) found"
